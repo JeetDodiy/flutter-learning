@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fultter_app_1/home/iconDemo.dart';
+import 'package:fultter_app_1/home/wegDemo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
         appBar: AppBar(title: const Text('Obscured Textfield')),
-        body: Center(child: Icondemo()),
+        body: Center(child: Wegdemo()),
       ),
     );
   }
