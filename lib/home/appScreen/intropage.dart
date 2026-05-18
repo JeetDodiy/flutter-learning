@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Intropage extends StatefulWidget {
   const Intropage({super.key});
 
@@ -9,6 +10,9 @@ class Intropage extends StatefulWidget {
 class _IntropageState extends State<Intropage> {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Container(height: 350,width: 350,color: Colors.red,));
+    return Scaffold(
+      appBar: AppBar(title: Text("Seccan Page",style: TextStyle(fontFamily: 'BlackOpsOne'),),),
+      body: Container(color: Colors.yellow,),
+    );
   }
 }

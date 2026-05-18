@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fultter_app_1/home/wegDemo.dart';
+import 'package:fultter_app_1/home/appScreen/firstpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +15,7 @@ class MyApp extends StatelessWidget {
       title: "this",
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
-        appBar: AppBar(title: const Text('Obscured Textfield')),
-        body: Center(child: Wegdemo()),
+        body: Center(child:Firstpage()),
       ),
     );
   }
