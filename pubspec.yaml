@@ -95,6 +95,10 @@ flutter:
       fonts:
         - asset: assets/fonts/EduAUVICWANTGuides.ttf
 
+    - family: Oi-Regular
+      fonts:
+        - asset: assets/fonts/Oi-Regular.ttf
+
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
