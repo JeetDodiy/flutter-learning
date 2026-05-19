@@ -9,6 +9,7 @@ class Firstpage extends StatefulWidget {
 }
 
 class _FirstpageState extends State<Firstpage> {
+  var textcon1 = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,27 +20,31 @@ class _FirstpageState extends State<Firstpage> {
         ),
         backgroundColor: Colors.lightGreenAccent,
       ),
-      body:Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "Hii this is my first page ",
-              style: TextStyle(fontSize: 28, color: Colors.blueAccent),
-            ),
-            SizedBox(
-              width: 100,
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Intropage()),
-                  );
-                },
-                child: Text("Click"),
+      body:Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                "Hii this is my first page ",
+                style: TextStyle(fontSize: 28, color: Colors.blueAccent),
               ),
-            ),
-          ],
-        ),
+              SizedBox(width: 450,child: TextField(controller: textcon1,style: TextStyle(fontSize: 24,fontFamily: 'Oi-Regular'),),height: 80,),
+              SizedBox(
+                width: 100,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Intropage(textcon1.text.toString())),
+                    );
+                  },
+                  child: Text("Click"),
+                ),
+              ),
+            ],
+          ),
+      ),
       backgroundColor: Colors.purple,
     );
   }
