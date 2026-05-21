@@ -23,7 +23,7 @@ class _RangMapanState extends State<RangMapan> {
               activeColor: Colors.lime,
               inactiveColor: Colors.lime.shade200,
               divisions: 20,
-              labels: RangeLabels(value.start.toString(), value.end.toString()),
+              labels: RangeLabels(value.start.toStringAsFixed(0), value.end.toStringAsFixed(0)),
               onChanged: (newValue) {
                 value = newValue;
                 setState(() {});

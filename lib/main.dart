@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "this",
       theme: ThemeData(primarySwatch: Colors.green),
-      home: Scaffold(
+      home: Scaffold(backgroundColor: Colors.lightGreen,
         appBar: AppBar(),
         body: Center(child:FirstPage()),
       ),
