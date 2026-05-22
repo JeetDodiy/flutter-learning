@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fultter_app_1/home/bmi_projekt/first_page.dart';
+import 'package:fultter_app_1/home/bmi_projekt/bmi_Project_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(backgroundColor: Colors.lightGreen,
         appBar: AppBar(),
-        body: Center(child:FirstPage()),
+        body: Center(child:BmiProjectApp()),
       ),
     );
   }

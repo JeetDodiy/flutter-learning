@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({super.key});
+class BmiProjectApp extends StatefulWidget {
+  const BmiProjectApp({super.key});
 
   @override
-  State<FirstPage> createState() => _FirstPageState();
+  State<BmiProjectApp> createState() => _BmiProjectAppState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _BmiProjectAppState extends State<BmiProjectApp> {
   var wtController = TextEditingController();
   var ftController = TextEditingController();
   var itController = TextEditingController();
@@ -45,8 +44,10 @@ class _FirstPageState extends State<FirstPage> {
                   keyboardType: TextInputType.numberWithOptions(),
                 ),
                 TextField(
+
                   controller: ftController,
                   decoration: InputDecoration(
+                    filled: true,
                     label: Text("Height"),
                     hintText: "Enter your height (in feet)",
                     prefixIcon: Icon(Icons.height),
@@ -58,6 +59,7 @@ class _FirstPageState extends State<FirstPage> {
                 TextField(
                   controller: itController,
                   decoration: InputDecoration(
+                    filled: true,
                     label: Text("inch"),
                     hintText: "Enter Your Height (In inch)",
                     prefixIcon: Icon(Icons.height_sharp),
@@ -80,18 +82,22 @@ class _FirstPageState extends State<FirstPage> {
                       var tm = tCm / 100;
                       var bmi = iwt / (tm * tm);
                       var massg = "";
-                      if (bmi < 25){
-                        print("bov vadhi gyu lage chhe");
+                      if (bmi > 25) {
+                        massg = "bov vadhi gyu lage chhe";
+                        bgColors = Colors.red.shade900;
                       }
-                      else if (18 < bmi){
+                      else if (bmi < 18 ){
+                        massg = "Baka taro vajn bov ochho chhe";
+                        bgColors = Colors.yellow.shade400;
 
                       }
                       else{
-
+                        massg = "Jordar baka badhu baro bar chhe";
+                        bgColors = Colors.green.shade400;
                       }
 
                       setState(() {
-                        result = "your BMI IS :${bmi.toStringAsFixed(2)}";
+                        result = "$massg \n your BMI IS :${bmi.toStringAsFixed(2)}";
                       });
                     } else {
                       setState(() {
@@ -102,7 +108,7 @@ class _FirstPageState extends State<FirstPage> {
                   label: Text("Click"),
                   icon: Icon(Icons.subdirectory_arrow_left),
                 ),
-                Text(result, style: TextStyle(fontSize: 35)),
+                Text("$result ", style: TextStyle(fontSize: 35)),
               ],
             ),
           ),
