@@ -1,16 +1,31 @@
-# fultter_app_1
+# 🚀 Flutter Learning Journey
 
-A new Flutter project.
+Welcome to my Flutter learning repository! This project serves as a structured sandbox where I document my progress, experiment with cross-platform mobile app development, and master the Dart language alongside the Flutter SDK.
 
-## Getting Started
+[![Flutter Version](https://img.shields.io/badge/Flutter-%3E%3D3.0.0-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart Version](https://img.shields.io/badge/Dart-%3E%3D3.0.0-0175C2?logo=dart&logoColor=white)](https://dart.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📌 Roadmap & Core Objectives
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [x] **Dart Fundamentals:** OOP principles, asynchronous programming (Futures, Streams), and Null Safety.
+- [x] **UI & Layouts:** Mastery of basic and advanced widgets (`Row`, `Column`, `Stack`, `ListView`, `CustomScrollView`).
+- [ ] **State Management:** Implementation of modern architecture patterns (e.g., Provider, BLoC, or Riverpod).
+- [ ] **API Integration & Persistence:** Handling REST APIs using `http`/`dio` and storing local data with Hive or SQLite.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📂 Repository Structure
+
+Below is an overview of how the practice projects and UI challenges are organized in this repository:
+
+```text
+├── 01_dart_basics/          # Core Dart exercises and OOP concepts
+├── 02_hello_flutter/         # First stateless and stateful widget experiments
+├── 03_ui_challenges/         # Custom profile screens, card layouts, and custom themes
+├── 04_state_management/      # Projects tracking local state vs global state (Provider/BLoC)
+└── 05_mini_apps/             # Fully functional standalone learning projects
+    ├── calculator_app/       
+    └── weather_app/          # (Example: API-driven application)
