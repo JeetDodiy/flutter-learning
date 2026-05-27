@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fultter_app_1/home/animation/ripal_animation.dart';
+import 'package:fultter_app_1/home/animation/hero_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
       title: "this",
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(backgroundColor: Colors.lightGreen,
-        appBar: AppBar(),
-        body: RipalAnimation(),
+        body: HeroAni(),
       ),
     );
   }
