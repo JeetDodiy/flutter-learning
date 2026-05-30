@@ -22,7 +22,7 @@ class _HeroAniState extends State<HeroAni> {
         child: InkWell(
           onTap: () {
             Navigator.push(
-              context,
+                context,
               MaterialPageRoute(builder: (context) => HeroaniTag()),
             );
           },

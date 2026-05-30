@@ -11,7 +11,7 @@ class _HeroaniTagState extends State<HeroaniTag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar(backgroundColor: Colors.green.shade300,
         title: Center(
           child: Text(
             "Hero Animation Tag Page",
@@ -24,8 +24,8 @@ class _HeroaniTagState extends State<HeroaniTag> {
           tag: "backGround",
           child: Image.asset(
             "assets/images/logo.jpg",
-            width: double.infinity,
-            height: double.infinity,
+            width: 500,
+            height: 500,
           ),
         ),
       ),
