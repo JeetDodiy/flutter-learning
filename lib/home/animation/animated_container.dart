@@ -12,8 +12,6 @@ class _AniConState extends State<AniCon> {
   var _conWidth = 250.0;
   var _boderRedustle = 250.0;
   var _boderRedusbre = 250.0;
-  var anicourve = Curves.bounceInOut;
-  Color bgColorsAni = Colors.black87;
   bool flag = true;
 
   @override
@@ -33,7 +31,6 @@ class _AniConState extends State<AniCon> {
                 ),
                 color: bgColorsAni,
               ),
-              curve: anicourve,
               height: _conHeight,
               width: _conWidth,
               duration: Duration(seconds: 3),
