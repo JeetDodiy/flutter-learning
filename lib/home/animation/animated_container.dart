@@ -12,6 +12,7 @@ class _AniConState extends State<AniCon> {
   var _conWidth = 250.0;
   var _boderRedustle = 250.0;
   var _boderRedusbre = 250.0;
+  Color bgColorsAni = Colors.red;
   bool flag = true;
 
   @override
