@@ -7,7 +7,7 @@ class ListwheelDemo extends StatefulWidget {
   @override
   State<ListwheelDemo> createState() => _ListwheelDemoState();
 }
-
+var indexValue = [1,2,3,4,5,6,7,8,9,10];
 class _ListwheelDemoState extends State<ListwheelDemo> {
   @override
   Widget build(BuildContext context) {
@@ -16,128 +16,23 @@ class _ListwheelDemoState extends State<ListwheelDemo> {
         height: 250,
         child: ListWheelScrollView(
           itemExtent: 150,
-          children: [
-            Container(width: 150, color: Colors.blue),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HeroaniTag()),
-                );
-              },
-              child: Hero(
-                transitionOnUserGestures: true,
-                tag: "backGround",
-                child: Image.asset(
-                  "assets/images/logo.jpg",
-                  width: 150,
-                  height: 150,
-                ),
+          children: indexValue.map((value) => InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HeroaniTag()),
+              );
+            },
+            child: Hero(
+              transitionOnUserGestures: true,
+              tag: "backGround",
+              child: Image.asset(
+                "assets/images/logo.jpg",
+                width: 150,
+                height: 150,
               ),
             ),
-
-            Container(width: 150, color: Colors.blue),
-            Container(width: 150, color: Colors.blue),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HeroaniTag()),
-                );
-              },
-              child: Hero(
-                transitionOnUserGestures: true,
-                tag: "backGround",
-                child: Image.asset(
-                  "assets/images/logo.jpg",
-                  width: 150,
-                  height: 150,
-                ),
-              ),
-            ),
-
-            Container(width: 150, color: Colors.red),
-            Container(width: 150, color: Colors.green),
-            Container(width: 150, color: Colors.black38),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HeroaniTag()),
-                );
-              },
-              child: Hero(
-                transitionOnUserGestures: true,
-                tag: "backGround",
-                child: Image.asset(
-                  "assets/images/logo.jpg",
-                  width: 150,
-                  height: 150,
-                ),
-              ),
-            ),
-
-            Container(width: 150, color: Colors.amber),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HeroaniTag()),
-                );
-              },
-              child: Hero(
-                transitionOnUserGestures: true,
-                tag: "backGround",
-                child: Image.asset(
-                  "assets/images/logo.jpg",
-                  width: 150,
-                  height: 150,
-                ),
-              ),
-            ),
-
-            Container(width: 150, color: Colors.cyan),
-            Container(width: 150, color: Colors.grey),
-            Container(width: 150, color: Colors.blue),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HeroaniTag()),
-                );
-              },
-              child: Hero(
-                transitionOnUserGestures: true,
-                tag: "backGround",
-                child: Image.asset(
-                  "assets/images/logo.jpg",
-                  width: 150,
-                  height: 150,
-                ),
-              ),
-            ),
-
-            Container(width: 150, color: Colors.blue),
-            Container(width: 150, color: Colors.blue),
-
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HeroaniTag()),
-                );
-              },
-              child: Hero(
-                transitionOnUserGestures: true,
-                tag: "backGround",
-                child: Image.asset(
-                  "assets/images/logo.jpg",
-                  width: 150,
-                  height: 150,
-                ),
-              ),
-            ),
-          ],
+          ) ).toList()
         ),
       ),
     );
