@@ -14,7 +14,7 @@ class _ClipRRectdemoState extends State<ClipRRectdemo> {
       body: Center(
         child: ClipRRect(
           borderRadius: BorderRadiusGeometry.only(
-            topLeft: Radius.elliptical(100, 100),
+            topLeft: Radius.elliptical(100, 100), 
             topRight: Radius.circular(22),
             bottomRight: Radius.circular(22),
             bottomLeft: Radius.circular(22),
