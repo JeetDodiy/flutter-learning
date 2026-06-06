@@ -18,6 +18,8 @@ class _GradientDemoState extends State<GradientDemo> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [Colors.orange.shade300, Colors.white10,Colors.green.shade900],
+              begin: FractionalOffset(0.7,0.0),
+                end: FractionalOffset(0.0, 0.5)
             ),
           ),
         ),
