@@ -12,16 +12,19 @@ class _GradientDemoState extends State<GradientDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
+        child: Container(alignment: Alignment.topCenter,
           height: double.infinity,
           width: double.infinity,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.orange.shade300, Colors.white10,Colors.green.shade900],
-              begin: FractionalOffset(0.7,0.0),
-                end: FractionalOffset(0.0, 0.5)
+            gradient: RadialGradient(
+              colors: [Colors.orange.shade600,
+                Colors.pink,
+                Colors.green.shade200],
+              stops: [0.3,0.7,0.0],
+              center: Alignment.topCenter
             ),
           ),
+          child: Text("BMI",style: TextStyle(fontSize: 80),),
         ),
       ),
     );
